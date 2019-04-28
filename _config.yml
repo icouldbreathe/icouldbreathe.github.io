@@ -3,7 +3,7 @@ logo: /assets/img/logo.png
 description: Recently graduated from The University of Nottingham, currently looking for junior software engineering positions.
 show_downloads: false
 show_social: true
-google_analytics:
+google_analytics: UA-139209187-1
 theme: jekyll-theme-minimal
 
 author: Dovydas Ciomenas
