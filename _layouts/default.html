@@ -25,7 +25,7 @@
                 <img class = "hero_logo" src="{{site.logo | relative_url}}" alt="Logo" />
             </a>
             {% endif %}
-            
+
             <h1 class="hero_title">
               I'm Dovydas Ciomenas, a  
               <a href="">Software Engineering</a>
@@ -34,14 +34,16 @@
         
             <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-            <div class="container">
-                <div class="social">
-                    <a href="#" class="fa fa-github fa-3x"></a>
-                    <a href="#" class="fa fa-linkedin fa-3x"></a>
-                    <a href="#" class="fa fa-flickr fa-3x"></a>
-                    <a href="#" class="fa fa-envelope fa-3x"></a>
-                </div>
+            <a class="lets_chat" href="https://aemail.com/qNR">Let's chat.</a>
+
+            {% if site.show_social %}
+            <div class="social">
+                <a href="{{ site.social_github_url}}" class="fa fa-github fa-3x"></a>
+                <a href="{{ site.social_linkedin_url}}" class="fa fa-linkedin fa-3x"></a>
+                <a href="{{ site.social_flickr_url}}" class="fa fa-flickr fa-3x"></a>
             </div>
+            {% endif %}
+
     
             {% if site.show_downloads %}
             <ul class="downloads">

@@ -3,14 +3,14 @@
 
 @import "{{ site.theme }}";
 
-@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400');
 
 .hero {
-    font-family: Work Sans,Helvetica,Arial,sans-serif;
+    font-family: "Work Sans", Helvetica, Arial, sans-serif;
+    font-weight: 400;
 }
 
 .hero_title {
-    font-family: inherit;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -30,27 +30,20 @@
     margin-right: auto;
 }
 
-.wrapper .container {
-    text-align: center;
+.lets_chat {
+    font-size: 1.5em;
+    font-weight: 300;
 }
 
-.social {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-/* Style all font awesome icons */
 .social .fa {
-    padding: 25px;
+    margin: 40px;
     font-size: 30px;
     width: auto;
     text-align: center;
     text-decoration: none;
   }
 
-  
-  /* Add a hover effect if you want */
   .social .fa:hover {
     opacity: 0.7;
   }
