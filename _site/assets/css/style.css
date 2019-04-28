@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
 @font-face {
   font-family: 'Noto Sans';
   font-weight: 400;
@@ -319,7 +320,7 @@ img {
   max-width: 100%; }
 
 header {
-  width: 270px;
+  width: 340px;
   float: left;
   position: fixed;
   -webkit-font-smoothing: subpixel-antialiased; }
@@ -447,3 +448,43 @@ footer {
     padding: 0.4in;
     font-size: 12pt;
     color: #444; } }
+.hero {
+  font-family: Work Sans,Helvetica,Arial,sans-serif; }
+
+.hero_title {
+  font-family: inherit;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #5d5d5d; }
+
+.hero_link {
+  font-family: inherit;
+  color: #2fe0c5; }
+
+.hero_logo {
+  border-radius: 50%;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wrapper .container {
+  text-align: center; }
+
+.social {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Style all font awesome icons */
+.social .fa {
+  padding: 25px;
+  font-size: 30px;
+  width: auto;
+  text-align: center;
+  text-decoration: none; }
+
+/* Add a hover effect if you want */
+.social .fa:hover {
+  opacity: 0.7; }
