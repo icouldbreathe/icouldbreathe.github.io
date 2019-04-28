@@ -31,20 +31,14 @@
         
             <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-            <div class="social">
-                <a href="#" class="fa fa-github fa-3x"></a>
-                <a href="#" class="fa fa-linkedin fa-3x"></a>
-                <a href="#" class="fa fa-flickr fa-3x"></a>
-                <a href="#" class="fa fa-envelope fa-3x"></a>
+            <div class="container">
+                <div class="social">
+                    <a href="#" class="fa fa-github fa-3x"></a>
+                    <a href="#" class="fa fa-linkedin fa-3x"></a>
+                    <a href="#" class="fa fa-flickr fa-3x"></a>
+                    <a href="#" class="fa fa-envelope fa-3x"></a>
+                </div>
             </div>
-    
-            {% if site.github.is_project_page %}
-            <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-            {% endif %}
-    
-            {% if site.github.is_user_page %}
-            <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-            {% endif %}
     
             {% if site.show_downloads %}
             <ul class="downloads">
