@@ -21,8 +21,11 @@
       <header>
         <div class="hero">
             {% if site.logo %}
-            <img class = "hero_logo" src="{{site.logo | relative_url}}" alt="Logo" />
+            <a href="#">
+                <img class = "hero_logo" src="{{site.logo | relative_url}}" alt="Logo" />
+            </a>
             {% endif %}
+            
             <h1 class="hero_title">
               I'm Dovydas Ciomenas, a  
               <a href="">Software Engineering</a>
