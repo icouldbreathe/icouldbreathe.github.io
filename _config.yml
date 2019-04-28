@@ -6,6 +6,30 @@ show_social: true
 google_analytics:
 theme: jekyll-theme-minimal
 
+author: Dovydas Ciomenas
+
+posts_enabled: false
+
+collections:
+  projects:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
 # Social
 social_github_url: https://github.com/icouldbreathe
 social_linkedin_url: https://www.linkedin.com/in/ciomenas/
