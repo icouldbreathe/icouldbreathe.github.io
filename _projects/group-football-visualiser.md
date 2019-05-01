@@ -5,6 +5,8 @@ current: false
 technology: Java, JavaFX, FXML
 ---
 
+<img src="/assets/img/group-football-visualiser/poster.png" alt="poster" style="margin-bottom: 20px;">
+
 <img src="/assets/img/group-football-visualiser/FVlogoFinal.png" alt="app-logo" style="width:128px; display: inline-block; float: left; margin-right: 10px;"/>During the penultimate year of university, I was part of a software engineering group project in which we developed a working football visualiser application using real world match data. The data was gathered by sensors placed on every individual player as well as the ball itself. It was a year long project, the team consisted of 6 members including myself. The project was presented at the end of the year and won the best presentation prize.
 
 The full product manual and description of features are available [HERE](/assets/docs/Product Manual.pdf).
