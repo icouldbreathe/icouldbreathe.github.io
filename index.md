@@ -4,24 +4,6 @@ layout: default
 
 # Portfolio
 
-
-#### Take a look at some projects I am currently working on.
-
-<ul>
-  {% for project in site.projects %}
-    {% if project.current %}
-      <li>
-        <a href="{{ project.url }}">
-          {{ project.title }}
-        </a> - {{ project.technology }}
-        <p>{{ project.description }}</p>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
-
----
-
 #### Take a look at some projects I have worked on in the past.
 
 <ul>
