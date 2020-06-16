@@ -4,7 +4,7 @@ layout: default
 
 # Portfolio
 
-#### Take a look at some projects I have worked on in the past.
+#### Take a look at some of the projects I have worked on in the past:
 
 <ul>
   {% for project in site.projects %}
@@ -18,10 +18,10 @@ layout: default
     {% endif %}
   {% endfor %}
 </ul>
+{% if site.posts_enabled %}
 
 ---
 
-{% if site.posts_enabled %}
 <ul>
   {% for post in site.posts %}
     <li>

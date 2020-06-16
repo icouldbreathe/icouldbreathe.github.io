@@ -28,12 +28,11 @@ layout: compress
             </a>
             {% endif %}
             <h1 class="hero_title">
-              I'm Dovydas Ciomenas, a  
-              <a href="/">Software Engineering</a>
-               graduate
+              I'm <span class="hero_name">Dovydas Ciomenas</span>, a<br>
+              <a href="/">Software Engineering</a> graduate
             </h1>
             <p>{{ site.description | default: site.github.project_tagline }}</p>
-            <a class="lets_chat" href="https://aemail.com/qNR">Let's chat.</a>
+            <a class="lets_chat" href="https://aemail.com/qNR"><i class="fa fa-envelope" aria-hidden="true"></i> Let's chat.</a>
             {% if site.show_social %}
             <div class="social">
                 <ul class="social-set">
@@ -63,7 +62,7 @@ layout: compress
 
       </section>
       <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Hosted on GitHub Pages</small></p>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
