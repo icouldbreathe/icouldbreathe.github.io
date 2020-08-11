@@ -15,11 +15,6 @@ collections:
     output: true
   pages:
     output: true
-  experimental:
-    output: true
-
-
-exclude: [_experimental/node_modules, _experimental/src, _experimental/package.json, _experimental/package-lock.json]
 
 
 defaults:

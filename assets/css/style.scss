@@ -2,6 +2,18 @@
 ---
 @import "{{ site.theme }}";
 
+.home {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    background-color: #266faf10;
+    padding: 0.5em 1em;
+}
+
+.home i {
+    margin-right: 5px;
+}
+
 .hero {
     font-family: "Work Sans", Helvetica, Arial, sans-serif;
     font-weight: 100;

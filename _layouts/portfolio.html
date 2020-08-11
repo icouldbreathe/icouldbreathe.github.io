@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<header>
+    <div class="hero">
+        {% if site.logo %}
+        <a href="/">
+            <img class = "hero_logo" src="{{site.logo | relative_url}}" alt="Logo" />
+        </a>
+        {% endif %}
+        <h1 class="hero_title">
+          I'm <span class="hero_name">Dovydas Ciomenas</span>, a<br>
+          <a href="/">Software Engineering</a> graduate
+        </h1>
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <a class="lets_chat" href="https://aemail.com/qNR"><i class="fa fa-envelope" aria-hidden="true"></i> Let's chat.</a>
+        {% if site.show_social %}
+        <div class="social">
+            <ul class="social-set">
+              <li>
+                <a class="sociali" href="{{ site.social_github_url }}" target="_blank">
+                  <i class="fab fa-github fa-2x" title="GitHub"></i>
+                </a>
+              </li>
+              <li>
+                  <a class="sociali" href="{{ site.social_linkedin_url }}" target="_blank">
+                      <i class="fab fa-linkedin fa-2x" title="LinkedIn"></i>
+                    </a>
+              </li>
+              <li>
+                  <a class="sociali" href="{{ site.social_flickr_url }}" target="_blank">
+                      <i class="fab fa-flickr fa-2x" title="Flickr"></i>
+                    </a>
+              </li>
+            </ul>
+          </div>
+        {% endif %}
+    </div>
+  </header>
+  <section>
+
+  {{ content }}
+
+  </section>
