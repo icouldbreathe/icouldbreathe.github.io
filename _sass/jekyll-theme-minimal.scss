@@ -4,7 +4,7 @@
 body {
   background-color: rgb(255, 255, 255);
   padding:50px;
-  font: 14px/1.5 "Avenir Next", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px/1.5 "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
   font-weight:400;
 }
@@ -36,7 +36,9 @@ h3, h4, h5, h6 {
 
 a {
   //color:#267CB9;
-  color: #2753b9;
+  //color: #2753b9;
+  //color: #3a54d6;
+  color: #5b6cc1;
   text-decoration:none;
   transition: 0.3s;
 }
@@ -58,7 +60,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:860px;
+  width:960px;
   margin:0 auto;
 }
 
@@ -107,7 +109,7 @@ img {
 }
 
 header {
-  width: 340px;
+  width: 250px;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -174,7 +176,7 @@ strong {
 }
 
 section {
-  width:500px;
+  width:690px;
   float:right;
   padding-bottom:50px;
 }
@@ -198,6 +200,11 @@ footer {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
+div.wrapper {
+  //width: auto;
+
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
@@ -212,7 +219,8 @@ footer {
   }
 
   header {
-    padding-right:320px;
+    //padding-right:320px;
+    text-align: center;
   }
 
   section {

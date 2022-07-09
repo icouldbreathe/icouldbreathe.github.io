@@ -14,7 +14,8 @@ The next are the solar panels which are all connected to either a supportive str
 
 The following image shows the ISS in the orbit of the earth.
 
-![ISS](/assets/img/mdp-iss.png)
+<img src="/assets/img/mdp-iss.png" alt="ISS scene" style="width:32em;" />
+<small><br>ISS 3D scene.</small>
 
 The solar panels do change their position and rotation in real life. In my model, they change rotation for most of the panels. To make the scene look realistic, I have created a skybox with images of the earth in the orbit. The model itself is at the centre of the skybox and the sun is at the edge of it, shining light at the ISS.
 

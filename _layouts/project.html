@@ -2,24 +2,16 @@
 layout: portfolio
 ---
 
+
+
 <h1>{{ page.title }}</h1>
 {% if page.technology %}
-  <small>Technology: <em>{{ page.technology | join: "</em> - <em>" }}</em></small>
+  <span class="technology">Technology: <em>{{ page.technology | join: "</em> - <em>" }}</em></span>
 {% endif %}
-
-
 {% if page.repository %}
-  <small>
-      <p>
-        <a href="{{ page.repository }}">Source on GitHub</a>
-      </p>
-      
-  </small>
+  <p><a class="view_source button" target="_blank" href="{{ page.repository }}"><i class="fab fa-github fa-1x" title="GitHub"></i> View source</a></p>
 {% endif %}
-<p>
-  
-</p>
-
+<br><br>
 {{content}}
 
 

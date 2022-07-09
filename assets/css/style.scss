@@ -2,43 +2,20 @@
 ---
 @import "{{ site.theme }}";
 
-.home {
-    position: fixed;
-    top: 1em;
-    left: 1em;
-    background-color: #266faf10;
-    padding: 0.5em 1em;
-}
-
-.home i {
-    margin-right: 5px;
-}
-
 .hero {
-    font-family: "Work Sans", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
     font-weight: 100;
 }
 
 .hero_title {
-    margin-top: 30px;
+    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    color: #151b3eb5; 
+    color: #171b309e;
 }
 
 .hero_title a {
     font-weight: 400;
-}
-
-.hero_title a::after {
-    content: "";
-    border-top: 15px solid #266faf;
-    display: block;
-    position: relative;
-    width: 90%;
-    top: 0;
-    opacity: 0.1;
-    margin: -15px 0 0 0;
 }
 
 .hero_name {
@@ -48,16 +25,27 @@
 
 @media screen and (min-width: 601px) {
     .hero_title {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .hero_logo {
         width: 13em;
+    }
+
+    .view_source {
+        display: block;
+        float: right;
+    }
+    
+    .technology {
+        display: block;
+        float: left;
+        padding: 4px 0px 4px 0px;
     }
 }
 
 @media screen and (max-width: 600px) {
     .hero_title {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     .hero_logo {
         width: 12em;
@@ -77,10 +65,11 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.8;
 }
 
 .lets_chat {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 300;
 }
 
@@ -131,3 +120,38 @@
     margin: 40px 30px 30px 30px !important;
     
   }
+
+  .button {
+    text-decoration: none;
+    background-color: #5b6cc1;
+    color: white;
+    padding: 4px 8px 4px 8px;
+  }
+
+.button:hover {
+    background-color: #5d5d5d;
+    color: white;
+}
+
+.button:visited {
+    color: white;
+}
+
+.button:focus {
+    color: white;
+}
+
+.projects_desc {
+    opacity: 0.8;
+}
+
+.projects_li {
+    background-color: #b5b5b50d;
+    list-style-type: none;
+    padding: 8px 8px 8px 8px;
+    margin: 8px 8px 12px -20px;
+}
+
+.projects_li a {
+    font-weight: 600;
+}

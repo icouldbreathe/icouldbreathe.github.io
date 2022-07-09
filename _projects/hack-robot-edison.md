@@ -11,6 +11,7 @@ Initially, we wanted to work with Google's Project Tango device, which has a com
 
 Since we had access to a 3D printer, all of the parts were modeled and 3D printed. We used Intel Edison for the processor to connect and control the robot over the internet with the help of NodeJS.
 
-![hack-robot](/assets/img/hack-robot.jpg)
+<img src="/assets/img/hack-robot.jpg" alt="Robot prototype." style="width:32em;" />
+<small><br>Robot prototype.</small>
 
 The outcome was a robot that could be controlled with a keyboard, but the Tango idea was scratched due to the project being too complicated. Unfortunately, it was not able to drive around due to lack of batteries available during the hackathon.
