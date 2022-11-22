@@ -1,14 +1,16 @@
 ---
-title: "Personal project: Ray Tracer"
+title: "Learning project: Ray Tracer"
 description: "A personal learning project to learn and implement ray tracing in C++."
 current: true
 repository: https://github.com/icouldbreathe/Raytracer
 technology: C++
 ---
+<img align="right" src="/assets/img/ray-tracer/rtiow-final-render.png" alt="RTIOW Final Render" style="margin: 0 10px 10px 10px;width:20em;" />
+I have picked up this project to learn more about graphics programming, particularly offline rendering. In this case it is a ray tracer or more technically a path tracer. In essence it is an algorithm that calculates a pixel value based on ray-object interaction. Given different material types and their properties, different behaviour can be expected once the ray hits the object, simulating real-life physics of light scattering, reflection and refraction. The end result ends up producing photo-realistic images.
 
-Graphics programming is one of my interests and this project is meant to deepen my knowledge in this field, particularly with ray tracing and how it works. I have found that the online book series [Ray Tracing in One Weekend by Peter Shirley](https://raytracing.github.io/) is a good place to start and offers an easy to read, step-by-step explanation and covers both the programming side and the maths behind it.
+While this is a fairly general and simple solution, it was a good introduction to graphics programming and rendering. I have to thank the online book series [Ray Tracing in One Weekend by Peter Shirley](https://raytracing.github.io/) for providing an easy to follow and concise introduction to ray tracing.
 
-## My current progress with the project:
+### My current progress with the project
 
 -   Output an image (PPM)
 -   Implement progress indicator
@@ -26,16 +28,9 @@ Graphics programming is one of my interests and this project is meant to deepen 
 -   Defocus Blur
 -   Final Render
 
-## Final Render
+### Going forward
 
-I have made the final render of a scene including materials of diffuse, metal and dielectric type:
-
-<img src="/assets/img/ray-tracer/rtiow-final-render.png" alt="RTIOW Final Render" style="margin-bottom: 0px;" />
-<small>Final Render</small>
-
-## Going forward
-
-As of now I have finished the first book of the series and plan to improve on it. Several ideas come to mind:
+As of now I have finished the first book of the series and would love to improve on it. Several ideas come to mind:
 
 * Make it render faster. It can take a while to render a simple scene. One way to make it faster would be to introduce multithreading.
 * Implement more type of primitives for the rays to interact with.
