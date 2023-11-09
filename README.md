@@ -1,3 +1,5 @@
 # icouldbreathe.github.io
 
-Static Hugo Portfolio and Blog website.
+[![Deployed](https://github.com/icouldbreathe/icouldbreathe.github.io/actions/workflows/hugo.yaml/badge.svg)](https://github.com/icouldbreathe/icouldbreathe.github.io/actions/workflows/hugo.yaml)
+
+Personal Portfolio and Blog static website made with Hugo, using customized Hugo Liftoff theme.
