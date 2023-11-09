@@ -7,7 +7,7 @@ title = 'Davidcio.me' # Site title used throughout site
 ### SEO, Analytics & 3rd-party
 enableRobotsTXT = true # To overwrite the theme's robots.txt, add your own in the /layouts/ directory
 rssLimit = -1 # -1 is unlimited RSS entries
-# googleAnalytics = '' # Enter GA tracking ID to enable GA4
+googleAnalytics = 'UA-139209187-1' # Enter GA tracking ID to enable GA4
 # disqusShortname = 'davidcio-me' # Enter Disqus shortname to enable comments
 
 ### Content & Publishing
