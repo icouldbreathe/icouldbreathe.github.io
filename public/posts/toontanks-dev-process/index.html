@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0D0D0D"/>
+  
+  
+
+
+
+
+
+
+  
+  
+  
+    
+    
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+
+<link rel="stylesheet" href="https://davidcio.me/main.min.css" />
+
+
+  
+<meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  
+
+<title>Toontanks Circuit Clash Development Process</title>
+
+
+<meta name="author" content="Dovydas Ciomenas">
+
+<meta name="description" content="this is the description?">
+<link rel="canonical" href="https://davidcio.me/posts/toontanks-dev-process/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Toontanks Circuit Clash Development Process">
+<meta property="og:description" content="this is the description?">
+<meta property="og:url" content="https://davidcio.me/posts/toontanks-dev-process/">
+<meta property="article:published_time" content="2023-11-08T21:57:52+02:00">
+  <meta property="article:modified_time" content="2023-11-08T21:57:52+02:00">
+  
+
+<meta property="og:image" content="https://davidcio.me/posts/toontanks-dev-process/TTBanner2.png"/>
+  
+    <meta property="og:image:alt" content="Toontanks banner" />
+  
+
+
+
+
+
+
+  <meta name="twitter:site" content="icouldbreathe">
+
+
+  <meta name="twitter:creator" content="icouldbreathe">
+
+<meta name="twitter:title" content="Toontanks Circuit Clash Development Process">
+<meta name="twitter:description" content="this is the description?">
+
+
+<meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:image" content="https://davidcio.me/posts/toontanks-dev-process/TTBanner2.png"/>
+  
+    <meta name="twitter:image:alt" content="Toontanks banner">
+  
+
+
+
+
+
+  
+    
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://davidcio.me/#/schema/person/1",
+      "name": "Dovydas Ciomenas",
+      "url": "https://davidcio.me/",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://davidcio.me/#/schema/image/1",
+        "url": "https://davidcio.me/apple-me.jpeg",
+        "width": 892 ,
+        "height": 892 ,
+        "caption": "Dovydas Ciomenas"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://davidcio.me/#/schema/website/1",
+      "url": "https://davidcio.me/",
+      "name": "Davidcio.me",
+      "description": "Portfolio and Blog by Dovydas Ciomenas",
+      "publisher": {
+        "@id": "https://davidcio.me/#/schema/person/1"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://davidcio.me/posts/toontanks-dev-process/",
+      "url": "https://davidcio.me/posts/toontanks-dev-process/",
+      "name": "TOONTANKS - Circuit Clash Development Process",
+      "description": "this is the description?",
+      "isPartOf": {
+        "@id": "https://davidcio.me/#/schema/website/1"
+      },
+      "about": {
+        "@id": "https://davidcio.me/#/schema/person/1"
+      },
+      "datePublished": "2023-11-08T21:57:52+02:00",
+      "dateModified": "2023-11-08T21:57:52+02:00",
+      "breadcrumb": {
+        "@id": "https://davidcio.me/posts/toontanks-dev-process/#/schema/breadcrumb/1"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://davidcio.me/posts/toontanks-dev-process/#/schema/image/2"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [{
+        "@type": "ReadAction", "target": ["https://davidcio.me/posts/toontanks-dev-process/"]
+      }]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://davidcio.me/posts/toontanks-dev-process/#/schema/breadcrumb/1",
+      "name": "Breadcrumbs",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position":  1 ,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://davidcio.me/",
+          "url": "https://davidcio.me/",
+          "name": "Home"
+          }
+        },{
+        "@type": "ListItem",
+        "position":  2 ,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://davidcio.me/posts/",
+          "url": "https://davidcio.me/posts/",
+          "name": "Posts"
+          }
+        },{
+        "@type": "ListItem",
+        "position":  3 ,
+        "item": {
+          "@id": "https://davidcio.me/posts/toontanks-dev-process/"
+          }
+        }]
+    },
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://davidcio.me/#/schema/article/1",
+          "headline": "TOONTANKS - Circuit Clash Development Process",
+          "description": "this is the description?",
+          "isPartOf": {
+            "@id": "https://davidcio.me/posts/toontanks-dev-process/"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://davidcio.me/posts/toontanks-dev-process/"
+          },
+          "datePublished": "2023-11-08T21:57:52+02:00",
+          "dateModified": "2023-11-08T21:57:52+02:00",
+          "author": {
+            "@id": "https://davidcio.me/#/schema/person/1"
+          },          
+          "publisher": {
+            "@id": "https://davidcio.me/#/schema/person/1"
+          },
+          "image": {
+            "@id": "https://davidcio.me/posts/toontanks-dev-process/#/schema/image/2"
+          }
+        }
+      ]
+    },{
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ImageObject",
+          "@id": "https://davidcio.me/posts/toontanks-dev-process/#/schema/image/2",
+          "url": "https://davidcio.me/posts/toontanks-dev-process/TTBanner2.png",
+          "contentUrl": "https://davidcio.me/posts/toontanks-dev-process/TTBanner2.png",
+          "caption": "Toontanks banner"
+        }
+      ]
+    }
+  ]
+}
+</script>
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+  
+
+</head><body>
+    <header class="container">
+  <nav class="main-nav" id="js-navbar">
+    <a class="logo" href="https://davidcio.me/">Davidcio.me</a>
+    <ul class="menu" id="js-menu">
+      
+      
+      
+        <li class="menu-item">
+          <a href="/" class="menu-link">Me</a>
+        </li>
+      
+      
+      
+        <li class="menu-item">
+          <a href="/projects/" class="menu-link">Portfolio</a>
+        </li>
+      
+      
+      
+        <li class="menu-item">
+          <a href="/posts/" class="menu-link">Blog</a>
+        </li>
+      
+      
+      <li class="menu-item--align">
+        <div class="switch">
+          <input class="switch-input" type="checkbox" id="themeSwitch">
+          <label aria-hidden="true" class="switch-label" for="themeSwitch">On</label>
+          <div aria-hidden="true" class="switch-marker"></div>
+        </div>
+      </li>
+    </ul>
+    <span class="nav-toggle" id="js-navbar-toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="30" height="30" fill="var(--color-contrast-high)"><rect y="11" width="24" height="2" rx="1"/><rect y="4" width="24" height="2" rx="1"/><rect y="18" width="24" height="2" rx="1"/></svg>
+    </span>
+  </nav>
+</header><main class="section">
+<div class="container">
+  <section class="page-header">
+    <h1 class="page-header-title">TOONTANKS - Circuit Clash Development Process</h1>
+    <div class="post-list-meta">
+      <div class="post-list-dates">Nov 8, 2023&nbsp;&middot;&nbsp;11 min.</div>
+      
+      <div class="post-list-categories">
+        
+          <a href="https://davidcio.me/categories/postmortem/">Postmortem</a>
+        
+      </div>
+      
+      
+    </div>
+    <p class="page-header-desc">The development of my first game Toontanks - Circuit Clash</p>
+    <div class="single-terms">
+      
+      
+      <a class="term" href="https://davidcio.me/tags/devlog/">Devlog</a></li>
+      
+      <a class="term" href="https://davidcio.me/tags/ue5/">UE5</a></li>
+      
+      
+    </div>
+  </section>
+</div>
+<div class="single-container-post">
+  
+
+  <aside class="toc">
+    <div id="js-toc-toggle">
+      <h2 class="toc-header">Table of Contents</h2>
+      <span class="toc-drop-icon">&blacktriangledown;</span>
+    </div>
+    <div id="js-toc-contents" class="toc-contents"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#movement">Movement</a></li>
+    <li><a href="#turret-sight">Turret Sight</a></li>
+    <li><a href="#projectiles-damagetype-and-status-effects">Projectiles, DamageType and Status Effects</a></li>
+    <li><a href="#niagara-particles-and-effects">Niagara Particles and Effects</a></li>
+    <li><a href="#toon-shader">Toon Shader</a></li>
+    <li><a href="#projectile-inventory">Projectile Inventory</a></li>
+    <li><a href="#asset-manager-and-primary-data-assets">Asset Manager and Primary Data Assets</a></li>
+    <li><a href="#pickups">Pickups</a></li>
+    <li><a href="#meshes-and-lod">Meshes and LOD</a></li>
+    <li><a href="#ui">UI</a></li>
+    <li><a href="#settings">Settings</a></li>
+    <li><a href="#level-streaming">Level Streaming</a></li>
+    <li><a href="#factions-and-level-manager">Factions and Level Manager</a></li>
+    <li><a href="#saving">Saving</a></li>
+  </ul>
+</nav></div>
+  </aside>
+
+  <div class="single-post-contents">
+    <div class="single-feature-img">
+
+
+
+  
+
+
+<img class="feature-image" 
+     srcset="/posts/toontanks-dev-process/TTBanner2.png 480w, /posts/toontanks-dev-process/TTBanner2.png 800w"
+     sizes="(max-width: 600px) 480px, 800px"
+     src="/posts/toontanks-dev-process/TTBanner2.png"
+     alt="Toontanks banner">
+</div>
+    <article class="markdown">
+        <p>Over the last couple of months I&rsquo;ve been learning Unreal Engine 5 and I made this game by extending a course project by gamedev.tv. This was really fun and I learned loads. I&rsquo;d like to go over some things I have done. Let&rsquo;s get into it.</p>
+<h1 id="things-ive-done-and-learned">Things I&rsquo;ve Done and Learned<a href="#things-ive-done-and-learned">
+    <svg role="img" aria-labelledby="things-ive-done-and-learned-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="things-ive-done-and-learned-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h1><h2 id="movement">Movement<a href="#movement">
+    <svg role="img" aria-labelledby="movement-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="movement-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>My first additions were to make the tank able to move on slopes and have fake gravity that kills the tank at &rsquo;terminal velocity'.</p>
+<iframe src="https://giphy.com/embed/DhPZlJQQvLwoPapjo8" width="480" height="272" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/DhPZlJQQvLwoPapjo8"></a></p>
+<iframe src="https://giphy.com/embed/QwneHZD6czihun6B6x" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/QwneHZD6czihun6B6x"></a></p>
+<p>For the gravity, I made a separate gravity component that traces a line downwards from the tank to determine whether the tank should be falling at an accelerating rate or to snap its position to the ground.</p>
+<p>For the slopes, I used another trace, starting just ahead or behind the tank, depending on which direction it is moving, that points downwards. The hit point is then used to determine the slope angle with which to rotate the tank.</p>
+<p>Because the game has moving platforms, I&rsquo;ve also made all moving objects implement a moving ground interface that returns a moving velocity. That way, the tank will not fall off moving objects and move in sync.</p>
+<hr>
+<h2 id="turret-sight">Turret Sight<a href="#turret-sight">
+    <svg role="img" aria-labelledby="turret-sight-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="turret-sight-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>I sought to make turret behavior more dynamic in response to the environment. I implemented logic for turrets to only open fire when there were no obstructions blocking their line of sight. Additionally, I programmed turrets to deactivate if the tank ventured beyond their maximum shooting range.</p>
+<iframe src="https://giphy.com/embed/iIpS42qiD9ycNaPnoA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/iIpS42qiD9ycNaPnoA"></a></p>
+<hr>
+<h2 id="projectiles-damagetype-and-status-effects">Projectiles, DamageType and Status Effects<a href="#projectiles-damagetype-and-status-effects">
+    <svg role="img" aria-labelledby="projectiles-damagetype-and-status-effects-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="projectiles-damagetype-and-status-effects-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>To add depth to the gameplay, I introduced three distinct projectile types: Fire, Ice, and Electric. For each projectile, I created separate damage types to distinguish between the sources of damage. To make the visual effects engaging, I needed to create new particle systems and establish a method for triggering them on other pawns.</p>
+<p>Hence, I made an effect base class and a status effect component. The status effect component would be added to the actors that wish to display status effects. It took charge of managing these effects, while the effect base class handled the effects themselves, including their lifetimes and any side effects. Each specific type of effect extends the base class to spawn the required particles, sounds, or apply material overlays.</p>
+<p>To tie these elements together, I created an interface to connect the damage types with the visual effects. Each damage type implements this interface, facilitating the spawning of the appropriate effects on an actor, provided it has the status effect component.</p>
+<p>The status effect component validates and stores these effects, preventing nonsensical combinations, such as having both ice and fire effects active simultaneously.</p>
+<hr>
+<h2 id="niagara-particles-and-effects">Niagara Particles and Effects<a href="#niagara-particles-and-effects">
+    <svg role="img" aria-labelledby="niagara-particles-and-effects-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="niagara-particles-and-effects-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>The particles that were provided in this course were made with Cascade but I wanted to learn how to make particles myself and learned a bit of Niagara. There is a great resource on Youtube if you look for CGHOW.</p>
+<p>I have remade the same particles in Niagara as well as make new ones for ice, fire, electricity and various explosions, bursts and glows.</p>
+<p><img src="https://img.itch.zone/aW1nLzEzODUxNDAwLnBuZw==/original/1gD0ro.png"
+	alt="" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+<p>You can see below the projectile effects in action:</p>
+<iframe src="https://giphy.com/embed/2Xh9eHiT5MLhattW7z" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/2Xh9eHiT5MLhattW7z"></a></p>
+<p>The fire projectile also deals radial damage:</p>
+<iframe src="https://giphy.com/embed/tgK8nXYeSwHNdtVXUx" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/tgK8nXYeSwHNdtVXUx"></a></p>
+<hr>
+<h2 id="toon-shader">Toon Shader<a href="#toon-shader">
+    <svg role="img" aria-labelledby="toon-shader-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="toon-shader-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>For a more cartoony visual style, I utilized a post-process material. This material works by reducing the smoothness of transitions between lit and shadowed areas on objects. While I won&rsquo;t delve into extensive details here, a helpful <a href="https://www.youtube.com/watch?v=mzydOmgN7mc" target="_blank" rel="noopener">video</a> guided me through the process.</p>
+<hr>
+<h2 id="projectile-inventory">Projectile Inventory<a href="#projectile-inventory">
+    <svg role="img" aria-labelledby="projectile-inventory-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="projectile-inventory-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>The tank now needs a way to store and switch between these new projectiles. The inventory is quite straight forward. I made a projectile inventory component to store an array of projectile IDs and exposed methods to retrieve, populate and equip the projectiles.</p>
+<p>I&rsquo;ve added new inputs to switch between projectiles with the mouse wheel and the numpad. The tank or the turret will just fire the projectile that the inventory is currently marked as equipped.</p>
+<hr>
+<h2 id="asset-manager-and-primary-data-assets">Asset Manager and Primary Data Assets<a href="#asset-manager-and-primary-data-assets">
+    <svg role="img" aria-labelledby="asset-manager-and-primary-data-assets-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="asset-manager-and-primary-data-assets-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>As the project expanded, I considered ways to better organize assets. I noticed that many of my blueprints shared similar functionalities but different data. Although using these specific blueprints seemed easier, I explored the potential of an Asset Manager. While my implementation may not be the most optimal, it provided insights into how it works.</p>
+<p>Everything in Unreal is a secondary asset, except for Maps. But each asset can implement a function to get its asset type and ID that you can register in the Asset Manager. This is useful if you want to get control over how these assets are loaded or cooked. At least that&rsquo;s how I understand it.</p>
+<p>I&rsquo;ve made base primary asset types for effects and items. Items consisting of health drops and projectiles. While my blueprints are still holding all the data, the primary assets hold the metadata, i.e. information about the asset, like a thumbnail for the UI, a name, effects that should not go together etc. And of course the actual asset. There are probably better ways to do this but this is what I ended up with.</p>
+<p>For now, I am loading these assets on startup, I suppose I could come up with a more optimized way, but these assets do not take up much space and they are quite frequently in use. I do not really want the game to hitch upon first shooting a fire projectile, which would require the particle system to be loaded at once.</p>
+<p>What I gained from this is a nice way to reference my assets. Just using the type and the ID of the asset, I can load it and use it wherever I want. This also means that I just pass and hold an FPrimaryAssetId for my effects, inventory, projectiles and pickups. And it&rsquo;s quite easy to make a console command with the cheat manager to give myself these assets for debugging.</p>
+<hr>
+<h2 id="pickups">Pickups<a href="#pickups">
+    <svg role="img" aria-labelledby="pickups-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="pickups-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>Now the tank needs a way to acquire these assets in the game. I made projectile item and health boost pickups that get dropped after an actor dies. The actors that want to drop items need to implement a drop item interface, returning the items to drop. The game mode, upon receiving a dead actor, should then decide whether to drop it and how. I&rsquo;ve made it so the game can help you out if you are critically running low on health and drop one health boost automatically.</p>
+<p>When a pawn picks up an item, it just triggers an event and each pickup will know where to pass the FPrimaryAssetId it holds.</p>
+<iframe src="https://giphy.com/embed/huWbTq7AXClBZRFeXk" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/huWbTq7AXClBZRFeXk"></a></p>
+<iframe src="https://giphy.com/embed/OY2K0Jf42ML62EzPBg" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/OY2K0Jf42ML62EzPBg"></a></p>
+<hr>
+<h2 id="meshes-and-lod">Meshes and LOD<a href="#meshes-and-lod">
+    <svg role="img" aria-labelledby="meshes-and-lod-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="meshes-and-lod-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>I was planning on using the marketplace but I couldn&rsquo;t exactly find what I wanted. I found one sci-fi spaceship model that had these hexagonal tiles but they didn&rsquo;t fit the style I wanted. So I just made the platforms myself first and then the rest followed, kind of evolving into a synthwave PCB style.</p>
+<p>One thing of note, though. The platforms, when connected, make these holes in the corners. Instead of holes, I wanted there to be lights. And that required me to basically add planes in the corners for each platform, depending on how they connect. I didn&rsquo;t want to do that, so I made a hierarchical static mesh in one corner, and I made instances of it rotated by 90 degrees based on which bit is set in a bitmask variable exposed to the blueprints.</p>
+<p>I didn&rsquo;t make an LOD mesh for each model as I was kind of hoping to use the Nanite feature. But surprisingly, half of the people that tested my game had laptops that did not support DirectX12 and SM 6 required for Nanite.. So I just reduced the triangles for each LOD within UE, which I found to be quite okay. I mean, the meshes are not that complicated anyways.</p>
+<hr>
+<h2 id="ui">UI<a href="#ui">
+    <svg role="img" aria-labelledby="ui-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="ui-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><h4 id="menu">Menu<a href="#menu">
+    <svg role="img" aria-labelledby="menu-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="menu-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h4><p>I&rsquo;ve actually remade the UI several times, it was kind of my go to side of the project when I was stuck on other things..</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WQujdg_0JrY?si=z0jaVmtoKyTUbmTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>Honestly, I am not a big fan of UMG. Thankfully there&rsquo;s the Common UI plugin that helps a bit. At least, I was able to set up common styles for the various UI components and while I didn&rsquo;t really use its input routing features, it was useful to organize the widgets a bit and switch between them.</p>
+<h4 id="hud">HUD<a href="#hud">
+    <svg role="img" aria-labelledby="hud-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="hud-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h4><ul>
+<li>Health bar</li>
+<li>Equipped Projectile</li>
+<li>Projectile Inventory</li>
+</ul>
+<iframe src="https://giphy.com/embed/tQK3kEk3dEwGIGwTyB" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/tQK3kEk3dEwGIGwTyB"></a></p>
+<ul>
+<li>Level indicator</li>
+</ul>
+<iframe src="https://giphy.com/embed/TfRIeXWeSccRuPJ5Dm" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/TfRIeXWeSccRuPJ5Dm"></a></p>
+<ul>
+<li>Saving notification</li>
+</ul>
+<iframe src="https://giphy.com/embed/FafbkVKZMmujpJkx9h" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/FafbkVKZMmujpJkx9h"></a></p>
+<h4 id="loading-screen-and-slate">Loading Screen and Slate<a href="#loading-screen-and-slate">
+    <svg role="img" aria-labelledby="loading-screen-and-slate-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="loading-screen-and-slate-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h4><p>Apparently, there&rsquo;s a very poorly documented way to show a loading screen between loading the maps. Using the MoviePlayer, it&rsquo;s possible to display widgets or movies and it supposedly works on a separate thread. By binding to on start loading and finished loading map events, it is quite easy to set up.</p>
+<p>The problem is that UMG widgets will not tick. So it&rsquo;s not possible to display animations this way. Only way is to use Slate. Which I did. It&rsquo;s not very well documented either but I used an example of TestLoadingScreenWidget and SThrobber to come up with a simple Slate widget that overlays two brushes, of which the second one is spinning. That&rsquo;s all I needed to create this loading screen once I fed the bottom and top parts of the tank as images. I think it looks neat. :)</p>
+<iframe src="https://giphy.com/embed/KQJDAcmkJmCvxcLzMw" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/KQJDAcmkJmCvxcLzMw"></a></p>
+<hr>
+<h2 id="settings">Settings<a href="#settings">
+    <svg role="img" aria-labelledby="settings-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="settings-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>For settings I made a custom UserSettings class for Brightness, Gamma, Game Difficulty and Level Streaming.</p>
+<p>Game difficulty is essentially a primary data asset that holds multipliers for damage. It is loaded and stored by the game mode and accessed when damage is being dealt. The setting changes which configuration to load.</p>
+<p>Brightness and gamma are Post-Process Volume settings. I made a data asset to store the post process settings separately and the game instance takes care of spawning the volume and setting it up with the data, as well as overriding it with new parameters. This way the post process effects remain everywhere.</p>
+<p>Level Streaming enables streaming of one level at a time to optimize memory usage.</p>
+<hr>
+<h2 id="level-streaming">Level Streaming<a href="#level-streaming">
+    <svg role="img" aria-labelledby="level-streaming-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="level-streaming-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>Initially I made everything in a single map. After finishing the six levels, I noticed that it had a bit of a performance issue when the player looked at far away meshes. Using LODs made it okay and my game still runs over 80fps most of the time.</p>
+<p>I tried to separate the levels into sub-levels in order to load them when needed but because I kind of relied on being able to see the whole map at all times when building the levels, it didn&rsquo;t make much sense.</p>
+<p>I split them anyways, triggered them with level streaming volumes and separated the environment with lighting into a separate sub-level as a lighting scenario and made an option in settings to load the levels one by one if that could help with the performance.</p>
+<hr>
+<h2 id="factions-and-level-manager">Factions and Level Manager<a href="#factions-and-level-manager">
+    <svg role="img" aria-labelledby="factions-and-level-manager-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="factions-and-level-manager-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>Initially, to win the game, the player needed to defeat all the turrets in the game. It didn&rsquo;t quite make sense because of the way I designed my levels. What if the player misses one turret at the start of the game and needs to go back? It&rsquo;s not exactly hard to run through to the end avoiding all turrets either.</p>
+<p>So I made these sub-levels or platforms that you have to capture before being allowed to progress further. When all turrets on that platform are destroyed, the whole sub-level turns blue and a moving platform connected to the next sub-level is unlocked.</p>
+<p>To do that I made a base faction actor, which implementd a change color interface. Now I just needed to set off the event. Each sub-level has a faction level manager actor that knows which sub-level it is, how many turrets are in this level and which faction owns it. When all turrets are destroyed, it informs the game mode, updates the state and changes the color on all actors that are able to do so.</p>
+<hr>
+<h2 id="saving">Saving<a href="#saving">
+    <svg role="img" aria-labelledby="saving-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="saving-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>I wasn&rsquo;t even planning on making a saving system to be honest. It was kind of supposed to be one life, on try game. But my friend testers did not like that at all.. And it was a bit awkward to implement saving at the end of the game development, a note to my future self, I guess.</p>
+<p>I made two SaveGame classes, one for the game and one for the player. Each would hold a struct with the relevant variables to be saved and would implement a save and load interface methods. Save method would get all the relevant data from actors, and the load method would set them.</p>
+<p>This approach consolidated saving logic, preventing it from scattering throughout the codebase. The game save was loaded by the game mode, preserving map data, sub-level states, and player spawn locations. The player save, on the other hand, was managed by the player controller and stored inventory and equipped items. This enabled seamless movement between maps while retaining inventory and progress.</p>
+<hr>
+<h1 id="final-thoughts">Final Thoughts<a href="#final-thoughts">
+    <svg role="img" aria-labelledby="final-thoughts-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="final-thoughts-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h1><p>There are probably more things I didn&rsquo;t mention but you can find the whole project and the source code <a href="https://github.com/icouldbreathe/toontanks-circuit-clash" target="_blank" rel="noopener">here</a>. This being my first game, don&rsquo;t expect it to be the state of the art production quality but that&rsquo;s why I would love to get feedback. I&rsquo;d really appreciate it!</p>
+<p>I&rsquo;ll be making more games in the future so follow if you are interested!</p>
+
+    </article>
+    <aside>
+      <div class="single-terms">
+        
+          
+          <a class="term" href="https://davidcio.me/tags/devlog/">Devlog</a></li>
+          
+          <a class="term" href="https://davidcio.me/tags/ue5/">UE5</a></li>
+          
+        
+      </div>
+      
+  
+  
+  
+
+  <section>
+    <h2>Share</h2>
+    <div class="social-links">
+      <ul class="social-icons--share">
+        
+        
+        
+        
+        <a href="https://www.reddit.com/submit?url=https%3a%2f%2fdavidcio.me%2fposts%2ftoontanks-dev-process%2f" target="_blank" rel="noopener" aria-label="Share on Reddit" class="social-btn reddit">
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-reddit" width="24" height="24" viewBox="0 0 24 24" fill="var(--color-primary)"><path d="M24 11.779c0-1.459-1.192-2.645-2.657-2.645-.715 0-1.363.286-1.84.746-1.81-1.191-4.259-1.949-6.971-2.046l1.483-4.669 4.016.941-.006.058c0 1.193.975 2.163 2.174 2.163 1.198 0 2.172-.97 2.172-2.163s-.975-2.164-2.172-2.164c-.92 0-1.704.574-2.021 1.379l-4.329-1.015c-.189-.046-.381.063-.44.249l-1.654 5.207c-2.838.034-5.409.798-7.3 2.025-.474-.438-1.103-.712-1.799-.712-1.465 0-2.656 1.187-2.656 2.646 0 .97.533 1.811 1.317 2.271-.052.282-.086.567-.086.857 0 3.911 4.808 7.093 10.719 7.093s10.72-3.182 10.72-7.093c0-.274-.029-.544-.075-.81.832-.447 1.405-1.312 1.405-2.318zm-17.224 1.816c0-.868.71-1.575 1.582-1.575.872 0 1.581.707 1.581 1.575s-.709 1.574-1.581 1.574-1.582-.706-1.582-1.574zm9.061 4.669c-.797.793-2.048 1.179-3.824 1.179l-.013-.003-.013.003c-1.777 0-3.028-.386-3.824-1.179-.145-.144-.145-.379 0-.523.145-.145.381-.145.526 0 .65.647 1.729.961 3.298.961l.013.003.013-.003c1.569 0 2.648-.315 3.298-.962.145-.145.381-.144.526 0 .145.145.145.379 0 .524zm-.189-3.095c-.872 0-1.581-.706-1.581-1.574 0-.868.709-1.575 1.581-1.575s1.581.707 1.581 1.575-.709 1.574-1.581 1.574z"/></svg></li>
+        </a>
+        
+        
+                
+        <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdavidcio.me%2fposts%2ftoontanks-dev-process%2f" target="_blank" rel="noopener" aria-label="Share on Facebook" class="social-btn facebook">
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-facebook" width="24" height="24" viewBox="0 0 352 352" fill="var(--color-primary)"><path d="m0 32v288c0 17.5 14.5 32 32 32h288c17.5 0 32-14.5 32-32v-288c0-17.5-14.5-32-32-32h-288c-17.5 0-32 14.5-32 32zm320 0v288h-83v-108h41.5l6-48h-47.5v-31c0-14 3.5-23.5 23.5-23.5h26v-43.5c-4.4-.6-19.8-1.5-37.5-1.5-36.9 0-62 22.2-62 63.5v36h-42v48h42v108h-155v-288z"/></svg></li>
+        </a>
+        
+        
+        
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fdavidcio.me%2fposts%2ftoontanks-dev-process%2f&amp;source=https%3a%2f%2fdavidcio.me%2fposts%2ftoontanks-dev-process%2f&amp;title=TOONTANKS%20-%20Circuit%20Clash%20Development%20Process&amp;summary=TOONTANKS%20-%20Circuit%20Clash%20Development%20Process" target="_blank" rel="noopener" aria-label="Share on LinkedIn" class="social-btn linkedin">
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-linkedin" width="24" height="24" viewBox="0 0 352 352" fill="var(--color-primary)"><path d="M0,40v272c0,21.9,18.1,40,40,40h272c21.9,0,40-18.1,40-40V40c0-21.9-18.1-40-40-40H40C18.1,0,0,18.1,0,40z M312,32 c4.6,0,8,3.4,8,8v272c0,4.6-3.4,8-8,8H40c-4.6,0-8-3.4-8-8V40c0-4.6,3.4-8,8-8H312z M59.5,87c0,15.2,12.3,27.5,27.5,27.5 c15.2,0,27.5-12.3,27.5-27.5c0-15.2-12.3-27.5-27.5-27.5C71.8,59.5,59.5,71.8,59.5,87z M187,157h-1v-21h-45v152h47v-75 c0-19.8,3.9-39,28.5-39c24.2,0,24.5,22.4,24.5,40v74h47v-83.5c0-40.9-8.7-72-56.5-72C208.5,132.5,193.3,145.1,187,157z M64,288h47.5 V136H64V288z"/></svg></li>
+        </a>
+        
+        
+        
+        <a href="mailto:?subject=Davidcio.me%20-%20TOONTANKS%20-%20Circuit%20Clash%20Development%20Process.&amp;body=TOONTANKS%20-%20Circuit%20Clash%20Development%20Process%2c%20by%20Davidcio.me%0athis%20is%20the%20description%3f%0a%0ahttps%3a%2f%2fdavidcio.me%2fposts%2ftoontanks-dev-process%2f%0a" target="_blank" class="social-btn email">
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-mail" width="24" height="24" viewBox="0 0 416 288" fill="var(--color-primary)"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg></li>
+        </a>
+      </ul>
+    </div>
+  </section>
+  
+        
+
+  
+  
+
+        
+      
+        <div class="section">
+          <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "davidcio-me" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      
+    </aside>
+  </div>
+</div>
+
+    </main><footer>
+  
+  <div class="section footer">
+    <p class="footer-copyright">&copy; 2023 &middot; 
+      <a href="https://davidcio.me/">Davidcio.me</a>
+      
+        <span>&middot; Built with <a href="https://github.com/wjh18/hugo-liftoff" target="_blank" rel="noopener">Hugo Liftoff</a> theme.</span>
+      
+    </p>
+    
+      <div class="footer-socials">
+        
+<div class="social-links">
+  <ul class="social-icons">
+    
+    
+
+    
+    
+    <li>
+      <a href="https://mastodon.gamedev.place/@icouldbreathe" target="_blank" rel="me noopener" aria-label="Visit Mastodon profile" class="social-btn mastodon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-twitter" width="24" height="24" viewBox="0 0 512 539.675" fill="var(--color-primary)"><path fill-rule="nonzero" d="M509.934 119.48C502.047 61.492 450.957 15.797 390.393 6.943 380.174 5.444 341.461 0 251.779 0h-.669c-89.706 0-108.95 5.444-119.169 6.943C73.064 15.552 19.296 56.613 6.25 115.283c-6.274 28.896-6.943 60.93-5.779 90.315 1.663 42.141 1.984 84.206 5.854 126.175a587.526 587.526 0 0013.962 82.76c12.4 50.284 62.598 92.13 111.779 109.203a302.928 302.928 0 00163.538 8.535 244.938 244.938 0 0017.707-4.782c13.169-4.148 28.621-8.782 39.981-16.927.154-.113.282-.262.374-.432.089-.17.138-.358.146-.549v-40.666a1.197 1.197 0 00-.465-.929 1.242 1.242 0 00-1.023-.227 457.85 457.85 0 01-106.125 12.264c-61.505 0-78.048-28.87-82.784-40.888a125.62 125.62 0 01-7.194-32.23c-.01-.186.026-.369.102-.539a1.165 1.165 0 01.834-.674c.181-.04.371-.034.552.01a449.063 449.063 0 00104.389 12.264c8.457 0 16.888 0 25.347-.219 35.366-.981 72.64-2.772 107.436-9.493.868-.173 1.736-.319 2.482-.538 54.884-10.427 107.113-43.149 112.422-126.005.199-3.264.696-34.168.696-37.555.023-11.503 3.744-81.604-.547-124.676zm-84.473 206.752H367.75V186.417c0-29.435-12.4-44.445-37.625-44.445-27.727 0-41.615 17.758-41.615 52.834v76.528h-57.363v-76.528c0-35.076-13.915-52.834-41.642-52.834-25.075 0-37.599 15.01-37.625 44.445v139.815H94.219V182.173c0-29.432 7.597-52.818 22.792-70.151 15.675-17.293 36.234-26.171 61.754-26.171 29.539 0 51.859 11.234 66.741 33.676l14.359 23.844 14.385-23.844c14.88-22.442 37.201-33.676 66.691-33.676 25.494 0 46.053 8.878 61.777 26.171 15.196 17.317 22.793 40.7 22.793 70.151l-.05 144.059z"/></svg>
+      </a>
+    </li>
+    
+
+    
+    
+    <li>
+      <a href="https://github.com/icouldbreathe" target="_blank" rel="noopener" aria-label="Visit Github profile" class="social-btn github">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-github" width="24" height="24" viewBox="0 0 24 24" fill="var(--color-primary)"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+    </li>
+    
+
+    
+    
+
+    
+    
+    <li>
+      <a href="https://www.linkedin.com/in/ciomenas" target="_blank" rel="noopener" aria-label="Visit LinkedIn profile" class="social-btn linkedin">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-linkedin" width="24" height="24" viewBox="0 0 352 352" fill="var(--color-primary)"><path d="M0,40v272c0,21.9,18.1,40,40,40h272c21.9,0,40-18.1,40-40V40c0-21.9-18.1-40-40-40H40C18.1,0,0,18.1,0,40z M312,32 c4.6,0,8,3.4,8,8v272c0,4.6-3.4,8-8,8H40c-4.6,0-8-3.4-8-8V40c0-4.6,3.4-8,8-8H312z M59.5,87c0,15.2,12.3,27.5,27.5,27.5 c15.2,0,27.5-12.3,27.5-27.5c0-15.2-12.3-27.5-27.5-27.5C71.8,59.5,59.5,71.8,59.5,87z M187,157h-1v-21h-45v152h47v-75 c0-19.8,3.9-39,28.5-39c24.2,0,24.5,22.4,24.5,40v74h47v-83.5c0-40.9-8.7-72-56.5-72C208.5,132.5,193.3,145.1,187,157z M64,288h47.5 V136H64V288z"/></svg>
+        </a>
+    </li>
+    
+
+    
+    
+    <li>
+      <a href="mailto:?to=ciomenas%40icloud.com" target="_blank" class="social-btn email">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-mail" width="24" height="24" viewBox="0 0 416 288" fill="var(--color-primary)"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+      </div>
+    
+  </div>
+</footer>
+
+  
+
+
+
+
+
+  
+  
+  
+    
+    
+  
+
+
+
+
+  
+  
+    
+
+<script src="https://davidcio.me/main.min.js"></script>
+
+
+
+  
+</body>
+</html>

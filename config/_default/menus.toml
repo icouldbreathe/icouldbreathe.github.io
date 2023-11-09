@@ -1,0 +1,20 @@
+[[main]]
+    # Top-level menu entry
+    identifier = "me"
+    name = "Me"
+    url = "/"
+    weight = 1
+
+[[main]]
+    # Top-level menu entry
+    identifier = "portfolio"
+    name = "Portfolio"
+    url = "/projects/"
+    weight = 2
+
+[[main]]
+    # Top-level menu entry
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts/"
+    weight = 3
