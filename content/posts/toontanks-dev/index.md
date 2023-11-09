@@ -23,7 +23,7 @@ toc: true
 related: true
 social_share: true
 newsletter: false
-disable_comments: false
+disable_comments: true
 ---
 
 Over the last couple of months I've been learning Unreal Engine 5 and I made this game by extending a course project by gamedev.tv. This was really fun and I learned loads. I'd like to go over some things I have done. Let's get into it.
