@@ -34,7 +34,6 @@ Over the last couple of months I've been learning Unreal Engine 5 and I made thi
 
 My first additions were to make the tank able to move on slopes and have fake gravity that kills the tank at 'terminal velocity'.
 
-
 <iframe src="https://giphy.com/embed/DhPZlJQQvLwoPapjo8" width="480" height="272" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/DhPZlJQQvLwoPapjo8"></a></p>
 <iframe src="https://giphy.com/embed/QwneHZD6czihun6B6x" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/QwneHZD6czihun6B6x"></a></p>
 
@@ -139,8 +138,10 @@ I didn't make an LOD mesh for each model as I was kind of hoping to use the Nani
 #### Menu
 
 I've actually remade the UI several times, it was kind of my go to side of the project when I was stuck on other things..
+<div class="embed-container">
+    <iframe class="video" src="https://www.youtube.com/embed/WQujdg_0JrY?si=z0jaVmtoKyTUbmTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WQujdg_0JrY?si=z0jaVmtoKyTUbmTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Honestly, I am not a big fan of UMG. Thankfully there's the Common UI plugin that helps a bit. At least, I was able to set up common styles for the various UI components and while I didn't really use its input routing features, it was useful to organize the widgets a bit and switch between them.
 

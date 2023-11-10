@@ -1,6 +1,6 @@
 ---
 title: Hello, I am Dovydas Ciomenas
-subtitle: A Software Engineer on a gamedev journey. Open to opportunities!
+subtitle: A software engineer interested in game development, computer graphics, C++ and technical art. Currently open to new opportunities.
 seo_title: Dovydas Ciomenas Portfolio | Blog
 
 primary_cta_page: "projects"

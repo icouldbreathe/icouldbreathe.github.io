@@ -24,14 +24,39 @@ source_url: https://github.com/icouldbreathe/toontanks-circuit-clash
 newsletter: false
 ---
 
-This is my first complete game and it started as a gamedev.tv's course project. And I've spent way too much time extending it and making it my own.
+I’ve been working on this project and extending the game for quite some time now since I really got hooked on adding more and learning new things in Unreal Engine 5. I’m pleased to announce, ToonTanks: Circuit Clash! This feels like a complete game at this point. I think that it’s safe to say that I’ve learned a lot!
 
-Complete with 6 levels, unlockable projectiles, hand-made assets (except for the infamous tank, of course), saving system, status effects, and even a boss battle.
+The game has several projectiles, custom particles and status effects, pickups, inventory, hand-made meshes and materials, main menu and settings, level streaming, loading screen, saving, 6 total levels and a boss battle.
 
 ### [-> Read my post about the development process]({{< ref "posts/toontanks-dev">}})
 
 ### Trailer showcasing the gameplay
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/prpVCee-MS4?si=31Nlw18TBzs-6Vhr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="embed-container">
+    <iframe class="video" src="https://www.youtube.com/embed/prpVCee-MS4?si=31Nlw18TBzs-6Vhr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+---
+
+### Try it out on Itch.io:
 
 <iframe frameborder="0" src="https://itch.io/embed/2318899?linkback=true&amp;dark=true" width="552" height="167"><a href="https://icouldbreathe.itch.io/toontanks-circuit-clash">ToonTanks: Circuit Clash by icouldbreathe</a></iframe>
+
+---
+
+### Screenshots
+
+#### #1
+![Screenshot1](TTs1.png)
+
+#### #2
+![Screenshot1](TTs2.png)
+
+#### #3
+![Screenshot1](TTs3.png)
+
+#### #4
+![Screenshot1](TTs4.png)
+
+#### #5
+![Screenshot1](TTs5.png)
