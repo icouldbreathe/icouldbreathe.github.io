@@ -1,5 +1,7 @@
 ---
 title: Posts
-summary: Writing about things I am working on or something I am interested in.
+summary: Explore some of my recent posts.
 description: Explore some of my recent posts.
 ---
+
+Also check out my [ArtStation](https://www.artstation.com/icouldbreathe) portfolio.

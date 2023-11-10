@@ -138,9 +138,8 @@ I didn't make an LOD mesh for each model as I was kind of hoping to use the Nani
 #### Menu
 
 I've actually remade the UI several times, it was kind of my go to side of the project when I was stuck on other things..
-<div class="embed-container">
-    <iframe class="video" src="https://www.youtube.com/embed/WQujdg_0JrY?si=z0jaVmtoKyTUbmTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+
+{{< youtube WQujdg_0JrY >}}
 
 
 Honestly, I am not a big fan of UMG. Thankfully there's the Common UI plugin that helps a bit. At least, I was able to set up common styles for the various UI components and while I didn't really use its input routing features, it was useful to organize the widgets a bit and switch between them.

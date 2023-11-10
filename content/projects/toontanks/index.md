@@ -32,13 +32,12 @@ The game has several projectiles, custom particles and status effects, pickups, 
 
 ### Trailer showcasing the gameplay
 
-<div class="embed-container">
-    <iframe class="video" src="https://www.youtube.com/embed/prpVCee-MS4?si=31Nlw18TBzs-6Vhr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+{{< youtube prpVCee-MS4 >}}
 
 ---
 
 ### Try it out on Itch.io:
+
 
 <iframe frameborder="0" src="https://itch.io/embed/2318899?linkback=true&amp;dark=true" width="552" height="167"><a href="https://icouldbreathe.itch.io/toontanks-circuit-clash">ToonTanks: Circuit Clash by icouldbreathe</a></iframe>
 
