@@ -1,5 +1,5 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://davidcio.me'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Dovydas Ciomenas Portfolio | Blog'
 
 theme = 'hugo-liftoff'
