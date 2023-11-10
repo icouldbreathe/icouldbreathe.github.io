@@ -94,7 +94,7 @@ theme = 'hugo-liftoff'
     lineNumbersInTable = false # Not the default
     noClasses = true
     noHl = false
-    style = 'monokai'
+    style = 'github-dark'
     tabWidth = 4
   [markup.tableOfContents]
     endLevel = 2

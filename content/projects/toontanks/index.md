@@ -28,7 +28,7 @@ I’ve been working on this project and extending the game for quite some time n
 
 The game has several projectiles, custom particles and status effects, pickups, inventory, hand-made meshes and materials, main menu and settings, level streaming, loading screen, saving, 6 total levels and a boss battle.
 
-### [-> Read my post about the development process]({{< ref "posts/toontanks-dev">}})
+### [-> Read my post about the development process.]({{< ref "posts/toontanks-dev">}})
 
 ### Trailer showcasing the gameplay
 
