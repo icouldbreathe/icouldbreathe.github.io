@@ -26,7 +26,7 @@ newsletter: false
 
 Crypt Raider is a game based on Gamedev.tv's course where the player has to raid a crypt to find treasure, which involves solving a puzzle.
 
-The game has modular medieval assets that I used to design the level. The player can pick up objects, including keys and statues that unlock areas in the game, for example, unlocking a door with a key or placing a statue in place where it is missingto open a hidden passage.
+The game has modular medieval assets that I used to design the level. The player can pick up objects, including keys and statues that unlock areas in the game, for example, unlocking a door with a key or placing a statue in place where it is missing to open a hidden passage.
 
 ## Showcase video
 
@@ -68,4 +68,4 @@ The game has modular medieval assets that I used to design the level. The player
 
 #### Wireframe
 
-![Wireframe](CRwire.png)
+![Wireframe](CRwire4.png)
