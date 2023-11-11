@@ -2,7 +2,7 @@
 title: Android Apps
 seo_title: Android Apps
 summary: A course project for Android development.
-description: 
+description: A course project for Android development.
 slug: android-course
 author: Dovydas Ciomenas
 

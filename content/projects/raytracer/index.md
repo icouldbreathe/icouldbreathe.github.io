@@ -2,7 +2,7 @@
 title: Software Raytracer
 seo_title: Software Raytracer
 summary: A personal learning project that implements ray tracing in C++.
-description: 
+description: A personal learning project that implements ray tracing in C++.
 slug: raytracer
 author: Dovydas Ciomenas
 

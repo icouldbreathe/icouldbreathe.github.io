@@ -1,8 +1,8 @@
 ---
 title: TOONTANKS - Circuit Clash Development Process
 seo_title: Toontanks Circuit Clash Development Process
-summary: The development of my first game Toontanks - Circuit Clash
-description: this is the description?
+summary: The development of my first game Toontanks - Circuit Clash.
+description: The development of my first game Toontanks - Circuit Clash.
 slug: toontanks-dev-process
 author: Dovydas Ciomenas
 

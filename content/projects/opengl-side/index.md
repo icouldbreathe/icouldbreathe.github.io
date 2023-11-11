@@ -2,7 +2,7 @@
 title: OpenGL w/ GLFW and ImGUI Engine Prototype
 seo_title: OpenGL w/ GLFW and ImGUI Engine Prototype
 summary: Learning OpenGL and the graphics pipeline to display pixels and objects on the screen.
-description: 
+description: Learning OpenGL and the graphics pipeline.
 slug: opengl-side
 author: Dovydas Ciomenas
 

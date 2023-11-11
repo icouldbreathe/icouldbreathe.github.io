@@ -2,7 +2,7 @@
 title: Hackathon - Intel Edison Robot with 3D Printed Parts Prototype
 seo_title: Hackathon Robot
 summary: A hackathon project built with printed parts to scan the environment in 3D space.
-description: 
+description: A hackathon project.
 slug: hackathon-robot
 author: Dovydas Ciomenas
 
