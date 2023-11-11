@@ -15,7 +15,7 @@ publishDate:
 feature_image: 2d.png
 feature_image_alt: 
 
-project types: [Prototype, Learning]
+project types: [Prototype]
 
 techstack: [C++, OpenGL, GLFW, GLM, GLSL, GLAD, ImGUI]
 live_url: 

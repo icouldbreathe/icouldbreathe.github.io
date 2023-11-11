@@ -15,7 +15,7 @@ publishDate:
 feature_image: crypt.png
 feature_image_alt: 
 
-project types: [Prototype, Game]
+project types: [Game]
 
 techstack: [Unreal Engine 5, C++]
 live_url: 

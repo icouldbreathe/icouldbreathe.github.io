@@ -58,6 +58,21 @@
 }
 
 .page-header {
-    background-color: color-mix(in hsl, var(--color-contrast-lower) 70%, transparent);
+    background-color: color-mix(in hsl, var(--color-contrast-lower) 60%, transparent);
 }
 
+:root .terms {
+    margin-bottom: 50px;
+}
+
+.term {
+    background-color: var(--color-contrast-lower);
+    border: none;
+    color: var(--color-contrast-medium);
+}
+
+.term:hover {
+    background-color: var(--color-primary);
+    border: none;
+    color: var(--color-contrast-high);
+}

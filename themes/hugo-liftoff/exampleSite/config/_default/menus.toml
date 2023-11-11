@@ -78,7 +78,7 @@
 
 [[main]]
     identifier = "project-type"
-    name = "Project Types"
+    name = "project types"
     url = "/project-types/"
     parent = "explore"
     weight = 9
