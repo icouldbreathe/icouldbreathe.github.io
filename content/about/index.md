@@ -1,11 +1,10 @@
 ---
 type: about
 linktitle: About
-title: Hi, my name is Dovydas.
+title: About me
 seo_title: About
 description: Learn more about my background and experience.
 ---
 
-# About me
+<img src="/apple-me.jpeg" width="200" style="float:right;" />
 
-I am Dovydas Ciomenas.
