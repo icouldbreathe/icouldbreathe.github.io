@@ -15,7 +15,7 @@ publishDate:
 feature_image: TTBanner2.png
 feature_image_alt: 
 
-project types: [Published Game]
+project types: [Published Game, Game]
 
 techstack: [Unreal Engine 5, C++]
 live_url: https://icouldbreathe.itch.io/toontanks-circuit-clash
