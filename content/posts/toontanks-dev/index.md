@@ -34,9 +34,8 @@ Over the last couple of months I've been learning Unreal Engine 5 and I made thi
 
 My first additions were to make the tank able to move on slopes and have fake gravity that kills the tank at 'terminal velocity'.
 
-<iframe src="https://giphy.com/embed/DhPZlJQQvLwoPapjo8" width="480" height="272" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/DhPZlJQQvLwoPapjo8"></a></p>
-<iframe src="https://giphy.com/embed/QwneHZD6czihun6B6x" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/QwneHZD6czihun6B6x"></a></p>
-
+{{< giphy DhPZlJQQvLwoPapjo8 >}}
+{{< giphy QwneHZD6czihun6B6x >}}
 
 For the gravity, I made a separate gravity component that traces a line downwards from the tank to determine whether the tank should be falling at an accelerating rate or to snap its position to the ground.
 
@@ -50,7 +49,7 @@ Because the game has moving platforms, I've also made all moving objects impleme
 
 I sought to make turret behavior more dynamic in response to the environment. I implemented logic for turrets to only open fire when there were no obstructions blocking their line of sight. Additionally, I programmed turrets to deactivate if the tank ventured beyond their maximum shooting range.
 
-<iframe src="https://giphy.com/embed/iIpS42qiD9ycNaPnoA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/iIpS42qiD9ycNaPnoA"></a></p>
+{{< giphy iIpS42qiD9ycNaPnoA >}}
 
 ---
 
@@ -76,11 +75,11 @@ I have remade the same particles in Niagara as well as make new ones for ice, fi
 
 You can see below the projectile effects in action:
 
-<iframe src="https://giphy.com/embed/2Xh9eHiT5MLhattW7z" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/2Xh9eHiT5MLhattW7z"></a></p>
+{{< giphy 2Xh9eHiT5MLhattW7z >}}
 
 The fire projectile also deals radial damage:
 
-<iframe src="https://giphy.com/embed/tgK8nXYeSwHNdtVXUx" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/tgK8nXYeSwHNdtVXUx"></a></p>
+{{< giphy tgK8nXYeSwHNdtVXUx >}}
 
 ---
 
@@ -118,8 +117,8 @@ Now the tank needs a way to acquire these assets in the game. I made projectile 
 
 When a pawn picks up an item, it just triggers an event and each pickup will know where to pass the FPrimaryAssetId it holds.
 
-<iframe src="https://giphy.com/embed/huWbTq7AXClBZRFeXk" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/huWbTq7AXClBZRFeXk"></a></p>
-<iframe src="https://giphy.com/embed/OY2K0Jf42ML62EzPBg" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/OY2K0Jf42ML62EzPBg"></a></p>
+{{< giphy huWbTq7AXClBZRFeXk >}}
+{{< giphy OY2K0Jf42ML62EzPBg >}}
 
 ---
 
@@ -150,15 +149,15 @@ Honestly, I am not a big fan of UMG. Thankfully there's the Common UI plugin tha
 * Equipped Projectile
 * Projectile Inventory
 
-<iframe src="https://giphy.com/embed/tQK3kEk3dEwGIGwTyB" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/tQK3kEk3dEwGIGwTyB"></a></p>
+{{< giphy tQK3kEk3dEwGIGwTyB >}}
 
 * Level indicator
 
-<iframe src="https://giphy.com/embed/TfRIeXWeSccRuPJ5Dm" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/TfRIeXWeSccRuPJ5Dm"></a></p>
+{{< giphy TfRIeXWeSccRuPJ5Dm >}}
 
 * Saving notification
 
-<iframe src="https://giphy.com/embed/FafbkVKZMmujpJkx9h" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/FafbkVKZMmujpJkx9h"></a></p>
+{{< giphy FafbkVKZMmujpJkx9h >}}
 
 #### Loading Screen and Slate
 
@@ -166,7 +165,7 @@ Apparently, there's a very poorly documented way to show a loading screen betwee
 
 The problem is that UMG widgets will not tick. So it's not possible to display animations this way. Only way is to use Slate. Which I did. It's not very well documented either but I used an example of TestLoadingScreenWidget and SThrobber to come up with a simple Slate widget that overlays two brushes, of which the second one is spinning. That's all I needed to create this loading screen once I fed the bottom and top parts of the tank as images. I think it looks neat. :)
 
-<iframe src="https://giphy.com/embed/KQJDAcmkJmCvxcLzMw" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/KQJDAcmkJmCvxcLzMw"></a></p>
+{{< giphy KQJDAcmkJmCvxcLzMw >}}
 
 ---
 
