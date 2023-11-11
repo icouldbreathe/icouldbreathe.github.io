@@ -65,3 +65,7 @@ The game has modular medieval assets that I used to design the level. The player
 #### #8
 
 ![Screenshot](CR8.png)
+
+#### Wireframe
+
+![Wireframe](CRwire.png)
