@@ -2,12 +2,12 @@
 title: TOONTANKS - Circuit Clash
 seo_title: Toontanks Circuit Clash
 summary: A complete game made with Unreal Engine 5 that started as a course project for UE5 Gamedev.tv's course.
-description: 
+description: A complete game made with Unreal Engine 5 that started as a course project for UE5 Gamedev.tv's course.
 slug: toontanks
 author: Dovydas Ciomenas
 
 draft: false
-date: 2023-11-08T23:24:11+02:00
+date: 2023-11-08
 lastmod: 
 expiryDate: 
 publishDate: 

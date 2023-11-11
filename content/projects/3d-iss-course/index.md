@@ -2,7 +2,7 @@
 title: 3D Interactive International Space Station
 seo_title: 3D Interactive International Space Station
 summary: A course project for computer graphics.
-description: 
+description: A course project for computer graphics.
 slug: 3d-iss-course
 author: Dovydas Ciomenas
 

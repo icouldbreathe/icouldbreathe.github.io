@@ -2,7 +2,7 @@
 title: C++ SDL2 Course Game Prototype
 seo_title: C++ SDL2 Course Game
 summary: A course project for C++ programming
-description: 
+description: A course project for C++ programming
 slug: cpp-sdl2-course
 author: Dovydas Ciomenas
 

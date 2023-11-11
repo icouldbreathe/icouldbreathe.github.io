@@ -2,7 +2,7 @@
 title: Crypt Raider
 seo_title: Crypt Raider
 summary: A game prototype where you raid a crypt for valuable treasure.
-description: 
+description: A game prototype where you raid a crypt for valuable treasure.
 slug: crypt-raider
 author: Dovydas Ciomenas
 
