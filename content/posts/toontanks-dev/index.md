@@ -43,7 +43,7 @@ For the slopes, I used another trace, starting just ahead or behind the tank, de
 
 Because the game has moving platforms, I've also made all moving objects implement a moving ground interface that returns a moving velocity. That way, the tank will not fall off moving objects and move in sync.
 
----
+
 
 ## Turret Sight
 
@@ -51,7 +51,7 @@ I sought to make turret behavior more dynamic in response to the environment. I 
 
 {{< giphy iIpS42qiD9ycNaPnoA >}}
 
----
+
 
 ## Projectiles, DamageType and Status Effects
 
@@ -63,7 +63,7 @@ To tie these elements together, I created an interface to connect the damage typ
 
 The status effect component validates and stores these effects, preventing nonsensical combinations, such as having both ice and fire effects active simultaneously.
 
----
+
 
 ## Niagara Particles and Effects
 
@@ -81,13 +81,13 @@ The fire projectile also deals radial damage:
 
 {{< giphy tgK8nXYeSwHNdtVXUx >}}
 
----
+
 
 ## Toon Shader
 
 For a more cartoony visual style, I utilized a post-process material. This material works by reducing the smoothness of transitions between lit and shadowed areas on objects. While I won't delve into extensive details here, a helpful [video](https://www.youtube.com/watch?v=mzydOmgN7mc) guided me through the process.
 
----
+
 
 ## Projectile Inventory
 
@@ -95,7 +95,7 @@ The tank now needs a way to store and switch between these new projectiles. The 
 
 I've added new inputs to switch between projectiles with the mouse wheel and the numpad. The tank or the turret will just fire the projectile that the inventory is currently marked as equipped.
 
----
+
 
 ## Asset Manager and Primary Data Assets
 
@@ -109,7 +109,7 @@ For now, I am loading these assets on startup, I suppose I could come up with a 
 
 What I gained from this is a nice way to reference my assets. Just using the type and the ID of the asset, I can load it and use it wherever I want. This also means that I just pass and hold an FPrimaryAssetId for my effects, inventory, projectiles and pickups. And it's quite easy to make a console command with the cheat manager to give myself these assets for debugging.
 
----
+
 
 ## Pickups
 
@@ -120,7 +120,7 @@ When a pawn picks up an item, it just triggers an event and each pickup will kno
 {{< giphy huWbTq7AXClBZRFeXk >}}
 {{< giphy OY2K0Jf42ML62EzPBg >}}
 
----
+
 
 ## Meshes and LOD
 
@@ -130,7 +130,7 @@ One thing of note, though. The platforms, when connected, make these holes in th
 
 I didn't make an LOD mesh for each model as I was kind of hoping to use the Nanite feature. But surprisingly, half of the people that tested my game had laptops that did not support DirectX12 and SM 6 required for Nanite.. So I just reduced the triangles for each LOD within UE, which I found to be quite okay. I mean, the meshes are not that complicated anyways.
 
----
+
 
 ## UI
 
@@ -167,7 +167,7 @@ The problem is that UMG widgets will not tick. So it's not possible to display a
 
 {{< giphy KQJDAcmkJmCvxcLzMw >}}
 
----
+
 
 ## Settings
 
@@ -179,7 +179,7 @@ Brightness and gamma are Post-Process Volume settings. I made a data asset to st
 
 Level Streaming enables streaming of one level at a time to optimize memory usage.
 
----
+
 
 ## Level Streaming
 
@@ -189,7 +189,7 @@ I tried to separate the levels into sub-levels in order to load them when needed
 
 I split them anyways, triggered them with level streaming volumes and separated the environment with lighting into a separate sub-level as a lighting scenario and made an option in settings to load the levels one by one if that could help with the performance.
 
----
+
 
 ## Factions and Level Manager
 
@@ -199,7 +199,7 @@ So I made these sub-levels or platforms that you have to capture before being al
 
 To do that I made a base faction actor, which implementd a change color interface. Now I just needed to set off the event. Each sub-level has a faction level manager actor that knows which sub-level it is, how many turrets are in this level and which faction owns it. When all turrets are destroyed, it informs the game mode, updates the state and changes the color on all actors that are able to do so.
 
----
+
 
 ## Saving
 
@@ -209,7 +209,7 @@ I made two SaveGame classes, one for the game and one for the player. Each would
 
 This approach consolidated saving logic, preventing it from scattering throughout the codebase. The game save was loaded by the game mode, preserving map data, sub-level states, and player spawn locations. The player save, on the other hand, was managed by the player controller and stored inventory and equipped items. This enabled seamless movement between maps while retaining inventory and progress.
 
----
+
 
 # Final Thoughts
 
