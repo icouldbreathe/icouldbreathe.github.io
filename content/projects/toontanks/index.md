@@ -39,7 +39,7 @@ The game has several projectiles, custom particles and status effects, pickups, 
 ### Try it out on Itch.io:
 
 
-<iframe frameborder="0" src="https://itch.io/embed/2318899?linkback=true&amp;dark=true" width="552" height="167"><a href="https://icouldbreathe.itch.io/toontanks-circuit-clash">ToonTanks: Circuit Clash by icouldbreathe</a></iframe>
+<iframe frameborder="0" src="https://itch.io/embed/2318899?linkback=true&amp;dark=true" width="100%" height="100%"><a href="https://icouldbreathe.itch.io/toontanks-circuit-clash">ToonTanks: Circuit Clash by icouldbreathe</a></iframe>
 
 ---
 
