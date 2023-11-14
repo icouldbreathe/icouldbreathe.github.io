@@ -6,6 +6,8 @@ description: A game and level design prototype where you raid a crypt for valuab
 slug: crypt-raider
 author: Dovydas Ciomenas
 
+featured: true
+
 draft: false
 date: 2023-06-01
 lastmod: 

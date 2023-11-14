@@ -6,6 +6,8 @@ description: A complete game made with Unreal Engine 5 that started as a course 
 slug: toontanks
 author: Dovydas Ciomenas
 
+featured: true
+
 draft: false
 date: 2023-11-08
 lastmod: 
