@@ -6,6 +6,8 @@ description:
 slug: {{ .Name }}
 author: {{ .Site.Params.author }}
 
+featured: false
+
 draft: true
 date: {{ .Date }}
 lastmod: 
