@@ -12,7 +12,7 @@ lastmod:
 expiryDate: 
 publishDate: 
 
-feature_image: 
+feature_image: ssthumb.png
 feature_image_alt: 
 
 project types: 
