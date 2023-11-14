@@ -7,8 +7,8 @@ primary_cta_page: "projects"
 secondary_cta_page: "posts"
 
 posts_section_heading: Recent Posts
-projects_section_heading: Most Recent Projects
+projects_section_heading: Featured Projects
 ---
 
 {{< recent-posts 5 >}}
-{{< projects 2 >}}
+{{< featured-projects >}}
