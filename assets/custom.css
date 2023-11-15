@@ -15,7 +15,7 @@
 }
 
 [data-theme="dark"] {
-    --color-bg: rgb(13, 13, 13);
+    --color-bg: rgb(20, 20, 23);
 }
 
 /* Background Image behind posts and projects */
@@ -95,5 +95,4 @@
 
 .project-list {
     align-items: flex-start;
-    
 }
