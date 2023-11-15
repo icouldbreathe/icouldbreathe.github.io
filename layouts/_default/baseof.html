@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en-US" }}">
   {{- partial "head/head.html" . -}}
-  <body>
+  <body data-theme="dark">
     {{ if and (not .Site.IsServer) (.Site.Params.gtm_id) }}
       <!-- Google Tag Manager (noscript) -->
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ .Site.Params.gtm_id }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

@@ -1,9 +1,8 @@
-<script>
-    document.body.setAttribute('data-theme', 'dark');
-    localStorage.setItem('themeSwitch', 'dark');
-</script>
-
 <!-- Google Tag Manager -->
 {{ if .Site.Params.gtm_id }}
   {{ partial "head/gtm.html" . }}
 {{ end }}
+
+<script>
+    localStorage.setItem('themeSwitch', 'dark');
+</script>
