@@ -55,6 +55,7 @@ about_page_socials = true
   linkedin = "ciomenas" # Comment out to disable
   mastodon_server = "mastodon.gamedev.place" # include subdomains if relevant, scheme not needed (defaults to https)
   mastodon_user = "icouldbreathe" # don't include preceding @
+  itch = "icouldbreathe"
 
 # Enable or disable individual social share icons in posts
 [social.share]
