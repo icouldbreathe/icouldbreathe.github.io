@@ -36,9 +36,12 @@ I was responsible for our GIT repository management, some individual views and c
 
 We worked in pairs and had frequent meetings. The project was planned beforehand following agile Kanban board (Trello in our case) style methods, including  requirements gathering, writing documentation, class diagrams, unit testing, user stories, time management with Gantt chart.
 
-<img src="app-screen.png" alt="app screen" style="width:24em;" />
-<img src="app-diagram.png" alt="app screen" style="width:24em;" />
-<img src="app-heatmap.png" alt="app screen" style="width:24em;" />
+
+![App Screenshot](app-screen.png)
+
+![App Statistics Diagram](app-diagram.png)
+
+![App Heatmap](app-heatmap.png)
 <small><br>Screen captures of the app screen, statistics and heatmap.</small>
 
 The application includes:
