@@ -1,5 +1,7 @@
 /* Add custom CSS */
 
+
+
 :root, [data-theme="dark"] {
     color-scheme: dark;
   }
@@ -97,11 +99,6 @@
     align-items: flex-start;
 }
 
-.medium-zoom-overlay,
-.medium-zoom-image--opened {
-
-}
-
 .lds-ring {
     position: fixed;
     width: 80px;
@@ -115,9 +112,9 @@
         -ms-animation: fadein 4s; /* Internet Explorer */
          -o-animation: fadein 4s; /* Opera < 12.1 */
             animation: fadein 4s;
-  }
+}
 
-  @keyframes fadein {
+@keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
@@ -176,3 +173,41 @@
     }
   }
   
+
+.markdown p > img, .markdown figure > img {
+    width: 100%;
+}
+
+.padding50 {
+    padding: 50px 0 50px 0;
+}
+
+.margin50 {
+    margin: 50px 0 50px 0;
+}
+
+.see-more-projects {
+    display: block;
+}
+
+h2 {
+    margin-top: 1.2em;
+}
+
+ul.breadcrumb {
+    list-style: none;
+    padding: 0 30px 0 30px;
+    font-size:small;
+    opacity: 80%;
+    font-weight: 300;
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 2px;
+    content: "/\00a0";
+    color: var(--color-contrast-high);
+  }

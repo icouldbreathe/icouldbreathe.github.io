@@ -1,8 +1,8 @@
 ---
 title: TOONTANKS - Circuit Clash Development Process
 seo_title: Toontanks Circuit Clash Development Process
-summary: The development of my first game Toontanks - Circuit Clash.
-description: The development of my first game Toontanks - Circuit Clash.
+summary: I write about the development process of my first game, detailing the features and the implementations.
+description: I write about the development process of my first game, detailing the features and the implementations.
 slug: toontanks-dev-process
 author: Dovydas Ciomenas
 
@@ -17,7 +17,7 @@ feature_image_alt: Toontanks banner
 
 categories: [Postmortem]
 tags: [Devlog, UE5]
-series: 
+series:
 
 toc: true
 related: true
@@ -27,8 +27,6 @@ disable_comments: true
 ---
 
 Over the last couple of months I've been learning Unreal Engine 5 and I made this game by extending a course project by gamedev.tv. This was really fun and I learned loads. I'd like to go over some things I have done. Let's get into it.
-
-# Things I've Done and Learned
 
 ## Movement
 
@@ -43,15 +41,11 @@ For the slopes, I used another trace, starting just ahead or behind the tank, de
 
 Because the game has moving platforms, I've also made all moving objects implement a moving ground interface that returns a moving velocity. That way, the tank will not fall off moving objects and move in sync.
 
-
-
 ## Turret Sight
 
 I sought to make turret behavior more dynamic in response to the environment. I implemented logic for turrets to only open fire when there were no obstructions blocking their line of sight. Additionally, I programmed turrets to deactivate if the tank ventured beyond their maximum shooting range.
 
 {{< giphy iIpS42qiD9ycNaPnoA >}}
-
-
 
 ## Projectiles, DamageType and Status Effects
 
@@ -63,15 +57,13 @@ To tie these elements together, I created an interface to connect the damage typ
 
 The status effect component validates and stores these effects, preventing nonsensical combinations, such as having both ice and fire effects active simultaneously.
 
-
-
 ## Niagara Particles and Effects
 
 The particles that were provided in this course were made with Cascade but I wanted to learn how to make particles myself and learned a bit of Niagara. There is a great resource on Youtube if you look for CGHOW.
 
 I have remade the same particles in Niagara as well as make new ones for ice, fire, electricity and various explosions, bursts and glows. 
 
-![](https://img.itch.zone/aW1nLzEzODUxNDAwLnBuZw==/original/1gD0ro.png)
+![Custom Niagara Systems](ns.png)
 
 You can see below the projectile effects in action:
 
@@ -81,21 +73,15 @@ The fire projectile also deals radial damage:
 
 {{< giphy tgK8nXYeSwHNdtVXUx >}}
 
-
-
 ## Toon Shader
 
 For a more cartoony visual style, I utilized a post-process material. This material works by reducing the smoothness of transitions between lit and shadowed areas on objects. While I won't delve into extensive details here, a helpful [video](https://www.youtube.com/watch?v=mzydOmgN7mc) guided me through the process.
-
-
 
 ## Projectile Inventory
 
 The tank now needs a way to store and switch between these new projectiles. The inventory is quite straight forward. I made a projectile inventory component to store an array of projectile IDs and exposed methods to retrieve, populate and equip the projectiles.
 
 I've added new inputs to switch between projectiles with the mouse wheel and the numpad. The tank or the turret will just fire the projectile that the inventory is currently marked as equipped.
-
-
 
 ## Asset Manager and Primary Data Assets
 
@@ -109,8 +95,6 @@ For now, I am loading these assets on startup, I suppose I could come up with a 
 
 What I gained from this is a nice way to reference my assets. Just using the type and the ID of the asset, I can load it and use it wherever I want. This also means that I just pass and hold an FPrimaryAssetId for my effects, inventory, projectiles and pickups. And it's quite easy to make a console command with the cheat manager to give myself these assets for debugging.
 
-
-
 ## Pickups
 
 Now the tank needs a way to acquire these assets in the game. I made projectile item and health boost pickups that get dropped after an actor dies. The actors that want to drop items need to implement a drop item interface, returning the items to drop. The game mode, upon receiving a dead actor, should then decide whether to drop it and how. I've made it so the game can help you out if you are critically running low on health and drop one health boost automatically.
@@ -120,8 +104,6 @@ When a pawn picks up an item, it just triggers an event and each pickup will kno
 {{< giphy huWbTq7AXClBZRFeXk >}}
 {{< giphy OY2K0Jf42ML62EzPBg >}}
 
-
-
 ## Meshes and LOD
 
 I was planning on using the marketplace but I couldn't exactly find what I wanted. I found one sci-fi spaceship model that had these hexagonal tiles but they didn't fit the style I wanted. So I just made the platforms myself first and then the rest followed, kind of evolving into a synthwave PCB style.
@@ -130,11 +112,9 @@ One thing of note, though. The platforms, when connected, make these holes in th
 
 I didn't make an LOD mesh for each model as I was kind of hoping to use the Nanite feature. But surprisingly, half of the people that tested my game had laptops that did not support DirectX12 and SM 6 required for Nanite.. So I just reduced the triangles for each LOD within UE, which I found to be quite okay. I mean, the meshes are not that complicated anyways.
 
-
-
 ## UI
 
-#### Menu
+### Menu
 
 I've actually remade the UI several times, it was kind of my go to side of the project when I was stuck on other things..
 
@@ -143,7 +123,7 @@ I've actually remade the UI several times, it was kind of my go to side of the p
 
 Honestly, I am not a big fan of UMG. Thankfully there's the Common UI plugin that helps a bit. At least, I was able to set up common styles for the various UI components and while I didn't really use its input routing features, it was useful to organize the widgets a bit and switch between them.
 
-#### HUD
+### HUD
 
 * Health bar
 * Equipped Projectile
@@ -159,15 +139,13 @@ Honestly, I am not a big fan of UMG. Thankfully there's the Common UI plugin tha
 
 {{< giphy FafbkVKZMmujpJkx9h >}}
 
-#### Loading Screen and Slate
+### Loading Screen and Slate
 
 Apparently, there's a very poorly documented way to show a loading screen between loading the maps. Using the MoviePlayer, it's possible to display widgets or movies and it supposedly works on a separate thread. By binding to on start loading and finished loading map events, it is quite easy to set up.
 
 The problem is that UMG widgets will not tick. So it's not possible to display animations this way. Only way is to use Slate. Which I did. It's not very well documented either but I used an example of TestLoadingScreenWidget and SThrobber to come up with a simple Slate widget that overlays two brushes, of which the second one is spinning. That's all I needed to create this loading screen once I fed the bottom and top parts of the tank as images. I think it looks neat. :)
 
 {{< giphy KQJDAcmkJmCvxcLzMw >}}
-
-
 
 ## Settings
 
@@ -179,8 +157,6 @@ Brightness and gamma are Post-Process Volume settings. I made a data asset to st
 
 Level Streaming enables streaming of one level at a time to optimize memory usage.
 
-
-
 ## Level Streaming
 
 Initially I made everything in a single map. After finishing the six levels, I noticed that it had a bit of a performance issue when the player looked at far away meshes. Using LODs made it okay and my game still runs over 80fps most of the time. 
@@ -188,8 +164,6 @@ Initially I made everything in a single map. After finishing the six levels, I n
 I tried to separate the levels into sub-levels in order to load them when needed but because I kind of relied on being able to see the whole map at all times when building the levels, it didn't make much sense.
 
 I split them anyways, triggered them with level streaming volumes and separated the environment with lighting into a separate sub-level as a lighting scenario and made an option in settings to load the levels one by one if that could help with the performance.
-
-
 
 ## Factions and Level Manager
 
@@ -199,8 +173,6 @@ So I made these sub-levels or platforms that you have to capture before being al
 
 To do that I made a base faction actor, which implementd a change color interface. Now I just needed to set off the event. Each sub-level has a faction level manager actor that knows which sub-level it is, how many turrets are in this level and which faction owns it. When all turrets are destroyed, it informs the game mode, updates the state and changes the color on all actors that are able to do so.
 
-
-
 ## Saving
 
 I wasn't even planning on making a saving system to be honest. It was kind of supposed to be one life, on try game. But my friend testers did not like that at all.. And it was a bit awkward to implement saving at the end of the game development, a note to my future self, I guess.
@@ -209,9 +181,7 @@ I made two SaveGame classes, one for the game and one for the player. Each would
 
 This approach consolidated saving logic, preventing it from scattering throughout the codebase. The game save was loaded by the game mode, preserving map data, sub-level states, and player spawn locations. The player save, on the other hand, was managed by the player controller and stored inventory and equipped items. This enabled seamless movement between maps while retaining inventory and progress.
 
-
-
-# Final Thoughts
+## Final Thoughts
 
 There are probably more things I didn't mention but you can find the whole project and the source code [here](https://github.com/icouldbreathe/toontanks-circuit-clash). This being my first game, don't expect it to be the state of the art production quality but that's why I would love to get feedback. I'd really appreciate it!
 

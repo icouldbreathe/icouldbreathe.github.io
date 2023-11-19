@@ -1,7 +1,7 @@
 ---
 title: SoftEng Group Project - Football Visualiser
 seo_title: SoftEng Group Project - Football Visualiser
-summary: A Software Engineering project for visualising and analysing football games, developed in a team of 5.
+summary: A Software Engineering project for visualising and analysing football games, developed in a team of 6.
 description: A Software Engineering project.
 slug: football-visualiser
 author: Dovydas Ciomenas

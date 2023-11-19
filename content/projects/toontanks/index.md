@@ -32,32 +32,22 @@ The game has several projectiles, custom particles and status effects, pickups, 
 
 ### [-> Read my post about the development process.]({{< ref "posts/toontanks-dev">}})
 
-### Trailer showcasing the gameplay
+Trailer showcasing the gameplay:
 
 {{< youtube prpVCee-MS4 >}}
 
-### Try it out on Itch.io
+Try it out on Itch.io:
 
 <iframe frameborder="0" src="https://itch.io/embed/2318899?linkback=true&amp;dark=true" width="100%" height="100%"><a href="https://icouldbreathe.itch.io/toontanks-circuit-clash">ToonTanks: Circuit Clash by icouldbreathe</a></iframe>
 
 ### Screenshots
 
-#### #1
+![Screenshot 1: Tank shooting ice projectiles at the towers](TTs1.png)
 
-![Screenshot1](TTs1.png)
+![Screenshot 2: Tank being launched at with fire projectiles](TTs2.png)
 
-#### #2
+![Screenshot 3: Tank dodging projectiles coming from towers on fire](TTs3.png)
 
-![Screenshot1](TTs2.png)
+![Screenshot 4: Tank in intense combat with various kinds of towers](TTs4.png)
 
-#### #3
-
-![Screenshot1](TTs3.png)
-
-#### #4
-
-![Screenshot1](TTs4.png)
-
-#### #5
-
-![Screenshot1](TTs5.png)
+![Screenshot 5: Tank discovering a mysterious power source](TTs5.png)
