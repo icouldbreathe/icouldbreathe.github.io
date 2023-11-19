@@ -1,7 +1,5 @@
 /* Add custom CSS */
 
-
-
 :root, [data-theme="dark"] {
     color-scheme: dark;
   }
@@ -211,3 +209,24 @@ ul.breadcrumb li+li:before {
     content: "/\00a0";
     color: var(--color-contrast-high);
   }
+
+.footer-copyright {
+    font-size: var(--font-size-sm);
+}
+
+.footer-copyright:after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: var(--color-contrast-low);
+    width: 20px;
+    margin: 10px auto 20px auto;
+}
+
+.icon:hover {
+    fill: var(--color-contrast-high);
+}
+
+.term-current {
+    background-color: var(--color-primary);
+}
