@@ -175,7 +175,7 @@ To do that I made a base faction actor, which implementd a change color interfac
 
 ## Saving
 
-I wasn't even planning on making a saving system to be honest. It was kind of supposed to be one life, on try game. But my friend testers did not like that at all.. And it was a bit awkward to implement saving at the end of the game development, a note to my future self, I guess.
+I wasn't even planning on making a saving system to be honest. It was kind of supposed to be one life, one try game. But my friend testers did not like that at all.. And it was a bit awkward to implement saving at the end of the game development, a note to my future self, I guess.
 
 I made two SaveGame classes, one for the game and one for the player. Each would hold a struct with the relevant variables to be saved and would implement a save and load interface methods. Save method would get all the relevant data from actors, and the load method would set them.
 
