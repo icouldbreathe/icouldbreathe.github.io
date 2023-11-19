@@ -28,8 +28,7 @@ Over the Manchester hackathon, I had the opportunity to work with an Electrical 
 
 Initially, we wanted to work with Google's Project Tango device, which has a complex camera system to scan and 'understand' the environment in 3D world. The idea was to make a drivable robot with a gimbal attached to the scanner device which, over the internet, could be controlled. The purpose of this was to maybe gather and survey 3D information of buildings or difficult to access places. Another possible use was to allow the robot to maneuver in 3D space by itself.
 
-<small>Photo of the robot in construction:</small>
-![Robot](hack-robot.jpg)
+![Robot in construction](hack-robot.jpg)
 
 Since we had access to a 3D printer, all of the parts were modeled and 3D printed. We used Intel Edison for the processor to connect and control the robot over the internet with the help of NodeJS.
 

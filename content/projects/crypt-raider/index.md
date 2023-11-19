@@ -36,38 +36,20 @@ The game has modular medieval assets that I used to design the level. The player
 
 ## Screenshots
 
-#### #1
+![Screenshot 1: Church hall](CR1.png)
 
-![Screenshot](CR1.png)
+![Screenshot 2: Stairs to the crypt illuminated by light from the window](CR2.png)
 
-#### #2
+![Screenshot 3: Stairs to the crypt illuminated by light from the window](CR3.png)
 
-![Screenshot](CR2.png)
+![Screenshot 4: Raided crypt](CR4.png)
 
-#### #3
+![Screenshot 5: An area with a cell](CR5.png)
 
-![Screenshot](CR3.png)
+![Screenshot 6: Inside the cell used for torture with a beam of light coming from the exposed ceiling to catch attention that there is an important object in that place](CR6.png)
 
-#### #4
+![Screenshot 7: Revealed stairway to the treasure after a hidden wall comes down](CR7.png)
 
-![Screenshot](CR4.png)
+![Screenshot 8: Treasure where picking up the statue will trigger the gate to go down, leaving the player unable to get out, unless something else can replace the statue in place](CR8.png)
 
-#### #5
-
-![Screenshot](CR5.png)
-
-#### #6
-
-![Screenshot](CR6.png)
-
-#### #7
-
-![Screenshot](CR7.png)
-
-#### #8
-
-![Screenshot](CR8.png)
-
-#### Wireframe
-
-![Wireframe](CRwire4.png)
+![Wireframe of the level](CRwire4.png)
