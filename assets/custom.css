@@ -38,13 +38,9 @@
 
 /* Image thumbnail of a post visible in post lists */
 .post-list-thumb {
-    float: left;
-    margin-right: 12px;
-    position: relative;
-    min-height: 1rem;
+    margin-right: 22px;
     max-width: 100px;
     min-width: 100px;
-    flex: 1 1 350px;
 }
 
 .post-list-thumb img {
@@ -53,6 +49,19 @@
     object-fit: cover;
     position: relative;
     border: 1px solid var(--color-contrast-low);
+    filter: grayscale(30%);
+}
+
+.post-list-dates {
+    font-weight: 300;
+}
+
+.post-list-meta {
+    margin-top: 0;
+}
+
+.post-entry {
+    display: flex;
 }
 
 /* Disable theme switching */
@@ -90,7 +99,12 @@
 }
 
 .project-entry {
-    max-width: 360px;
+    max-width: 460px;
+    transition: transform 0.5s;
+}
+
+.project-entry:hover {
+    transform: scale(1.01);
 }
 
 .project-list {
