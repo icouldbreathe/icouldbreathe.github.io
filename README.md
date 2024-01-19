@@ -4,4 +4,4 @@
 
 Personal Portfolio and Blog static website made with Hugo, using customized Hugo Liftoff theme.
 
-Currently not in use, migrated to Astro.
+Currently not in use, migrated to Astro via Vercel.
